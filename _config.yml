@@ -71,7 +71,7 @@ defaults:
       menu: true
       order: 2
   - scope:
-      path: about.html
+      path: about.md
     values:
       menu: true
       order: 3
