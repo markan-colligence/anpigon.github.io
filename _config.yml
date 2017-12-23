@@ -45,8 +45,8 @@ author:
   social:
       email: mailto:bomjjack@gmail.com
       download: ''
-  name:                <별주머니> <>
-  email:               <bomjjack@gmail.com>
+  name:                별주머니
+  email:               bomjjack@gmail.com
   # Used by `jekyll-seo-tag`:
 
 # This text will appear in a `<small>` tag in the footer of every page.
@@ -84,7 +84,7 @@ defaults:
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image: '/assets/img/blog_background1.png'
+accent_image: '/assets/img/blog_background1.jpg'
 # background: '#202020' # provide a valid CSS background value
 # overlay: true # set to true if you want a dark overlay
 accent_color: '#4fb1ba'
@@ -109,7 +109,7 @@ disqus: bomjjack
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-google_analytics:     UA-111550614-1 
+google_analytics:     UA-111550614-1
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
