@@ -48,8 +48,6 @@ author:
   name:                <별주머니> <>
   email:               <bomjjack@gmail.com>
   # Used by `jekyll-seo-tag`:
-  twitter: ''
-  github: ''
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2017. All rights reserved.

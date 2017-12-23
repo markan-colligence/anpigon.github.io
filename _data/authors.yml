@@ -3,12 +3,12 @@
 # You can change `author1` to your shortname.
 author1:
   # Replace <...> with your own (remove the < >)
-  name:              <별주머니> <>
-  email:             <bomjjack@gmail.com>
+  name:              별주머니
+  email:             bomjjack@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:             |
+  about:
     생각도 정리할 겸 블로그를 쓰기로 했다.
 
 
@@ -23,9 +23,9 @@ author1:
   # Social media icons in sidebar.
   # Comment/uncommet to show/hide. Rearrange to change the order in which they appear.
   social:
-    # github:          bomjjack
+    github:          bomjjack
     # download:
-    # email:           mailto:<mail@domain.tld>
+    email:           mailto:bomjjack@gmail.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
