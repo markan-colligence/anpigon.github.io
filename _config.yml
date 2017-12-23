@@ -109,7 +109,7 @@ disqus: bomjjack
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-# google_analytics:      UA-XXXXXXXX-X
+google_analytics:     UA-111550614-1 
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
