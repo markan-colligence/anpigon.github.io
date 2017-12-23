@@ -8,8 +8,8 @@ author1:
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:
-    생각도 정리할 겸 블로그를 쓰기로 했다.
+  # about:
+  #  생각도 정리할 겸 블로그를 쓰기로 했다.
 
 
   # This photo will be used in the about section.
