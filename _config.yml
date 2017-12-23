@@ -22,19 +22,16 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack Starter Kit
+title:                 별주머니의 블로그
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
-  Combines the best of static sites and modern web apps.
-  Open `_config.yml` to edit this text.
+  별주머니의 블로그
 
 # A shorter description for the sidebar.
 tagline:               >
-  A Jekyll theme with JavaScript powers.
-  Open `_config.yml` to edit this text.
+  시간이 천천히 갔으면 좋겠다.
 
 # A list of keywords for your blog.
 keywords:              []
@@ -45,8 +42,8 @@ logo:                  /assets/icons/icon.png
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                <별주머니> <>
+  email:               <bomjjack@gmail.com>
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -58,15 +55,33 @@ permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              5
-paginate_path:         /page-:num/
+paginate_path:         /posts/page-:num/
 
+defaults:
+  - scope:
+      path: /posts/index.html
+    values:
+      menu: true
+      order: 1
+  - scope:
+      path: /category/profile.html
+    values:
+      menu: true
+      order: 2
+  - scope:
+      path: about.md
+    values:
+      menu: true
+      order: 3
 
 # Customizaton
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          '#4fb1ba'
+accent_image: '/assets/img/blog_background1.png'
+#  background: '#202020' # provide a valid CSS background value
+#  overlay: false # set to true if you want a dark overlay
+accent_color: '#4fb1ba'
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://qwtel.com/hydejack/docs/configuration/>
