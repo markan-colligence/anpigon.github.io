@@ -284,7 +284,7 @@ adder(2, 6);
 // > 8
 ~~~
 
-highlight 쓰지 말것
+highlight 문법 쓰지 말것
 
 ---
 
