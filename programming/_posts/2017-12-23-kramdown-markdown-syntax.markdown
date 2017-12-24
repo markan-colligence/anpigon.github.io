@@ -1,11 +1,9 @@
 ---
 layout: post
-category: programming
-title: "kramdown syntax "
-date:   2017-12-23 01:53:10 +0900
+title: kramdown syntax
 ---
 
-# Kramdown Syntax
+간단정리 Kramdown Syntax
 
 ## **1. Header**{: style="color: #0B518B"}.
 

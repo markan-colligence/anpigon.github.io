@@ -1,5 +1,7 @@
 ---
 layout: list
 title: "StartUp"
-slug: startup 
+slug: startup
+menu: true
+order: 3
 ---

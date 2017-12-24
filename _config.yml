@@ -61,21 +61,6 @@ paginate_path:         /posts/page-:num/
 
 defaults:
   - scope:
-      path: /posts/index.html
-    values:
-      menu: true
-      order: 1
-  - scope:
-      path: /category/profile.html
-    values:
-      menu: true
-      order: 2
-  - scope:
-      path: about.md
-    values:
-      menu: true
-      order: 3
-  - scope:
       type: posts
     values:
       comments: true
