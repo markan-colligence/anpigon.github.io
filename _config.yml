@@ -19,7 +19,7 @@ baseurl:               ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                 ko 
+lang:                 ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 별주머니의 블로그
@@ -57,7 +57,7 @@ permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              5
-paginate_path:         /posts/page-:num/
+paginate_path:         /blog/page-:num/
 
 defaults:
   - scope:
