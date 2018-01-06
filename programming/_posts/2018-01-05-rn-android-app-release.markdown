@@ -1,4 +1,11 @@
-## React Native 릴리즈 빌드(안드로이드 편)
+---
+layout: post
+title: React Native 릴리즈 빌드(안드로이드 편)
+date:   2018-01-06 13:45:10 +0900
+---
+
+안드로이드편.
+
 
 ### 1. Icon을 준비하자.
 
