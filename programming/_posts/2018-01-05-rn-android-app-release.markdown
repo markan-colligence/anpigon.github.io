@@ -1,3 +1,5 @@
+## React Native 릴리즈 빌드(안드로이드 편)
+
 ### 1. Icon을 준비하자.
 
 안드로이드와 iOS에서 각각 다음과 같은 아이콘이 필요하다.
@@ -34,7 +36,7 @@ Google Play Store에 올릴려면 Signing Release APK를 만들어야한다.
 $ keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 ~~~
 생성된 my-release-key.keystore는 android/app 폴더로 이동시킨다.
-keystore 파일 커밋되서 version control system으로 올라가지 않도록 조심하자.
+keystore 파일이 커밋되서 version control system으로 올라가지 않도록 조심하자.
 그리고 my-key-alias는 나중에 앱을 signing할 때 사용되니 잘 적어두자.
 
 - gradle 변수를 설정하자.
@@ -78,7 +80,7 @@ $ cd android && ./gradlew assembleRelease
 APK 파일은 android/app/build/outputs/apk/app-release.apk 여기 위치한다.
 
 
-#### 6. Google Sign In 세팅
+#### 5. Google Sign In 세팅
 Android Google Sign In을 사용하고 있다면 [Google Developers Console](https://console.developers.google.com/apis) 로 이동하여
 Production에서 사용할 Android 용 Client ID를 새로 만든다.
 
@@ -89,6 +91,6 @@ $ keytool -exportcert -alias MYAPP_RELEASE_KEY_ALIAS -keystore ~/projectfolder/a
 명령어로 공개키를 추출한다.
 SHA1 이라고 된 부분을 복사해서 가져오면 된다.
 
-#### 7. Firebase Auth 세팅
+#### 6. Firebase Auth 세팅
 Firebase Auth를 사용하고 있다면 [https://console.firebase.google.com/](https://console.firebase.google.com/)
 프로젝트로 이동하여 세팅 - SHA1 인증서 지문에 google sign in할때와 동일하게 공개키를 추가한다.
