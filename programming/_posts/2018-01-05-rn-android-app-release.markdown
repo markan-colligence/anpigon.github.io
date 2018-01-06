@@ -35,9 +35,9 @@ Google Play Store에 올릴려면 Signing Release APK를 만들어야한다.
 ~~~
 $ keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 ~~~
+keystore password, key password, my-key-alias 를 잘 기억하자.
 생성된 my-release-key.keystore는 android/app 폴더로 이동시킨다.
 keystore 파일이 커밋되서 version control system으로 올라가지 않도록 조심하자.
-그리고 my-key-alias는 나중에 앱을 signing할 때 사용되니 잘 적어두자.
 
 - gradle 변수를 설정하자.
     * my-release-key.keystore파일은 android/app 폴더안에 저장한다.
