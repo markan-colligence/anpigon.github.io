@@ -50,6 +50,8 @@ hibernate를 사용해보자.
     &lt;/hibernate-configuration&gt;
     </pre>
 
+실제 프로젝트에서는 Maven을 사용하겠지만 지금은 하이버네이트에 집중하자.
+
 2. DB에서 Table을 생성하고, 해당하는 매핑 Class 생성 (현재 Annotation사용. legacy는 xml 사용)
 ~~~ sql
 CREATE TABLE `employee` (
