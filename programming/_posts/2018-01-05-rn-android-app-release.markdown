@@ -51,9 +51,9 @@ keystore 파일이 커밋되서 version control system으로 올라가지 않도
     * ~/.gradle/gradle.properties 또는 android/gradle.properties 파일을 열어서 다음과 같이 추가한다.
 
     > MYAPP_RELEASE_STORE_FILE=my-release-key.keystore  
-    MYAPP_RELEASE_KEY_ALIAS=my-key-alias
-    MYAPP_RELEASE_STORE_PASSWORD=*****
-    MYAPP_RELEASE_KEY_PASSWORD=*****
+    MYAPP_RELEASE_KEY_ALIAS=my-key-alias  
+    MYAPP_RELEASE_STORE_PASSWORD=`*****`  
+    MYAPP_RELEASE_KEY_PASSWORD=`*****`  
 
 #### 3. android/app/build.gradle 편집
 ~~~java
