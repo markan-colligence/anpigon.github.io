@@ -69,7 +69,7 @@ defaults:
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image: '/assets/img/blog_background1.jpg'
+accent_image: '/assets/img/blog_background1.png'
 # background: '#202020' # provide a valid CSS background value
 # overlay: true # set to true if you want a dark overlay
 accent_color: '#4fb1ba'
