@@ -1,7 +1,8 @@
 ## Privacy Policy
 
-Everjinsoft operates the SimpleDaysOn mobile application(the service).
-This SERVICE is provided by everjinsoft and is intended for use as is.
+Effective date: October 26, 2018
+
+Everjinsoft ("us", "we", or "our") operates the SimpleDaysOn mobile application (the "Service").
 
 This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
 
