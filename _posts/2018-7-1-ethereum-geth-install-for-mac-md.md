@@ -1,6 +1,6 @@
 ---
-layout: post 
-categories: Blockchain
+layout: post
+categories: blockchain
 title: "이더리움 클라이언트 geth 맥에 설치하기"
 # tagline: 
 # tags : ["이더리움","geth"] 

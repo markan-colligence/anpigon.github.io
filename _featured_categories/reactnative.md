@@ -1,7 +1,8 @@
 ---
 layout: list
 title: "React Native"
-slug: "React Native"
+slug: reactnative
+# categories: reactnative
 menu: true
 order: 3
 ---
