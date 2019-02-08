@@ -1,17 +1,15 @@
 ---
+title: 스텔라 루멘(Stellar Lumens) 토큰 만드는 방법
+comments: true
 layout: post
 categories: blockchain
-title: "스텔라 루멘(Stellar Lumens) 토큰 만드는 방법"
-# tagline: 
-# tags : ["스텔라","루멘","가상화폐","코인","Stellar","lumens","coin","XLM"] 
-# published: true
 ---
 
-대부분의 ICO는 이더리움<sub>Ethereum</sub>의 토큰으로 발행하고 있습니다. 이렇게 하는 이유는 이더리움은 생태계가 매우 잘되어 있고, 많은 사람들이 이더리움을 사용하고 있기 때문입니다. 
+대부분의 ICO는 이더리움<sup>Ethereum</sup>의 토큰으로 발행하고 있습니다. 이렇게 하는 이유는 이더리움은 생태계가 매우 잘되어 있고, 많은 사람들이 이더리움을 사용하고 있기 때문입니다. 
 
 그러나 단점도 있습니다. 이더리움은 초당 약 15건의 트랜잭션만 처리할 수 있습니다. 이것은 이미 문제가 되고 있으며 일부 기존의 dApp들은 이더리움 플랫폼에서 벗어나고 있습니다.
 
-하지만 우리에게는 스텔라루멘(XLM)<sub>Stellar Lumens</sub>이 있습니다. 스텔라에서 나만의 토큰을 만드는 방법을 알아봅니다. 
+하지만 우리에게는 스텔라루멘(XLM)<sup>Stellar Lumens</sup>이 있습니다. 스텔라에서 나만의 토큰을 만드는 방법을 알아봅니다. 
 
 이 글에서는 스텔라에서 토큰을 발행하는 방법을 설명합니다.
 
@@ -51,13 +49,13 @@ title: "스텔라 루멘(Stellar Lumens) 토큰 만드는 방법"
 var keyPair = StellarSdk.Keypair.fromSecret(secret);
 
 server
-	.loadAccount(keyPair.publicKey()) // 1. 배포계정의 Account 정보 로드
+  .loadAccount(keyPair.publicKey()) // 1. 배포계정의 Account 정보 로드
   .then(function (account) {
     // 2. 트랜잭션 빌드
-		var transaction = new StellarSdk.TransactionBuilder(account)
-			.addOperation(StellarSdk.Operation.changeTrust({
-				asset: new StellarSdk.Asset('ANPIGON', 'GCCJZXGB5QRWNVUV2IYCEIFPLU2GB2FF7U4Y25MCCWYSVQYYE4O3ZIJT')
-			}))
+    var transaction = new StellarSdk.TransactionBuilder(account)
+      .addOperation(StellarSdk.Operation.changeTrust({
+        asset: new StellarSdk.Asset('ANPIGON', 'GCCJZXGB5QRWNVUV2IYCEIFPLU2GB2FF7U4Y25MCCWYSVQYYE4O3ZIJT')
+      }))
       .build();
   
     // 3. 트랜잭션 서명
