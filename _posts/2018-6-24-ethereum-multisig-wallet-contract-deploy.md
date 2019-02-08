@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: Blockchain
+categories: blockchain
 title: "이더리움 멀티시그 지갑 컨트랙트 배포하기"
 ---
 

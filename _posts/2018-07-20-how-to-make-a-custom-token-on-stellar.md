@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Blockchain
+categories: blockchain
 title: "스텔라 루멘(Stellar Lumens) 토큰 만드는 방법"
 # tagline: 
 # tags : ["스텔라","루멘","가상화폐","코인","Stellar","lumens","coin","XLM"] 

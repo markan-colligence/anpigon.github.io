@@ -1,7 +1,7 @@
 ---
 layout: list
 title: "Blockchain"
-slug: "Blockchain"
+slug: blockchain
 menu: true
 order: 4
 ---

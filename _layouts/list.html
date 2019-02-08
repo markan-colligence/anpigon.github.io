@@ -22,7 +22,8 @@
 layout: base
 ---
 
-{% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
+<!-- {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %} -->
+{% assign posts = site.categories[page.slug] | default:site.tags[page.slug] %}
 
 {% if page.title.size > 0 %}
   <header>

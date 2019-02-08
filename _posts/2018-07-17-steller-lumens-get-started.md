@@ -1,7 +1,7 @@
 ---
 layout: post
+categories: blockchain
 title: "스텔라 루멘(Stellar lumens) 시작하기"
-category: Blockchain
 # tagline: 
 # tags : ["스텔라 루멘","스텔라","루멘","가상화폐","코인","Stellar lumens","Stellar","lumen","coin"] 
 # published: true

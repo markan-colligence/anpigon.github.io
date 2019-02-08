@@ -41,5 +41,11 @@ _site
 /.bundle
 /vendor/bundle
 
+# npm
+node_modules/
+*.log
+*.gz
+build/
 *.lock
 *.bak
+package-lock.json

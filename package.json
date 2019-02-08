@@ -1,0 +1,24 @@
+{
+  "name": "anpigon.github.io",
+  "version": "1.0.0",
+  "description": "A quicker, cleaner way to get started blogging with [Hydejack](https://qwtel.com/hydejack/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anpigon/anpigon.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anpigon/anpigon.github.io/issues"
+  },
+  "homepage": "https://github.com/anpigon/anpigon.github.io#readme",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "lightrpc": "0.0.5",
+    "remarkable": "^1.7.1"
+  }
+}
