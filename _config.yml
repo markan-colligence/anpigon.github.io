@@ -58,7 +58,7 @@ permalink: pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate: 5
-paginate_path: /blog/page-:num/
+paginate_path: /page-:num/
 
 defaults:
   - scope:
@@ -84,7 +84,7 @@ google_fonts: Roboto+Slab:700|Noto+Serif+KR:400,400i,700,700i
 font: Noto Serif KR, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading: Roboto Slab, Helvetica, Arial, sans-serif
+font_heading: Noto Serif KR, Roboto Slab, Helvetica, Arial, sans-serif
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
