@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your page.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://bomjjack.github.io
+url: https://anpigon.github.io
 
 # IMPORTANT: Set The "base URL" of your site.
 #
@@ -15,49 +15,50 @@ url:                   https://bomjjack.github.io
 # When using GitHub Pages, set to '' when hosting a user- or organization page,
 # i.e. when the name of the repository looks like <username>.github.io.
 # Otherwise, set to /<name of repository> (with leading /, but without the < >).
-baseurl:               ''
+baseurl: ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                 ko
+lang: ko
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 별주머니의 블로그
+title: 안피곤의 블로그
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
-  별주머니의 블로그
+description: >
+  안피곤의 블로그
 
 # A shorter description for the sidebar.
-tagline:               >
+tagline: >
   시간이 천천히 갔으면 좋겠다.
 
 # A list of keywords for your blog.
-keywords:              []
+keywords: []
 
 # Used by jekyll-seo-tag.
-logo:                  /assets/icons/icon.png
+logo: /assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
+  picture:  /assets/img/me.png
   social:
-      email: mailto:bomjjack@gmail.com
+      email: mailto:markan82@gmail.com
       download: ''
-  name:                별주머니
-  email:               bomjjack@gmail.com
+  name: anpigon
+  email: markan82@gmail.com
   # Used by `jekyll-seo-tag`:
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2017. All rights reserved.
+copyright: © 2019. All rights reserved.
 
 # Format of the permalinks
-permalink:             pretty
+permalink: pretty
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              5
-paginate_path:         /blog/page-:num/
+paginate: 5
+paginate_path: /blog/page-:num/
 
 defaults:
   - scope:
@@ -77,24 +78,24 @@ accent_color: '#4fb1ba'
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://qwtel.com/hydejack/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+google_fonts: Roboto+Slab:700|Noto+Serif+KR:400,400i,700,700i
 
 # The text font. Expects a string that is a valid CSS font-family value.
-font:                  Noto Sans, Helvetica, Arial, sans-serif
+font: Noto Serif KR, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+font_heading: Roboto Slab, Helvetica, Arial, sans-serif
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus: bomjjack
+disqus: anpigon-github-io
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-google_analytics:     UA-111550614-1
+google_analytics: UA-20589042-10
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
@@ -107,41 +108,41 @@ google_analytics:     UA-111550614-1
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [about, newsletter, related]
+  post_addons: [about, newsletter, related]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other]
+  project_addons: [about, newsletter, other]
 
   # If you do not use Google Fonts, set to `true`.
-  no_google_fonts:     false
+  no_google_fonts: false
 
   # Set to `true` if you don't want to show an icon indicating external links
-  no_mark_external:    false
+  no_mark_external: false
 
   # Set to `true` if third party plugins fail to work with dynamically loaded pages
-  no_push_state:       false
+  no_push_state: false
 
   # Set to `true` if you want to disable the drawer
-  no_drawer:           false
+  no_drawer: false
 
   # Set to `true` if you do not want parts of the css inlined in <head/>
   # This *may* be benefitial when serving the site over HTTP/2.
-  no_inline_css:       false
+  no_inline_css: false
 
   # Code blocks and tables "break" the layout by spanning the full available width.
   # Set this to true if you want them to be the same width as other content.
-  no_break_layout:     false
+  no_break_layout: false
 
   # Set to `true` if you do not want to expose your resume and projects
   # in machine-readable formats.
-  no_structured_data:  false
+  no_structured_data: false
 
   # You can set this to `true` if you don't want to set the `theme-color` meta tag,
   # This only affects the meta tag, not the color specified in the app manifest.
-  no_theme_color:      false
+  no_theme_color: false
 
   # Set to `true` when building with the `--lsi` option
-  use_lsi:             false
+  use_lsi: false
 
 
 # Collections
@@ -149,16 +150,16 @@ hydejack:
 
 collections:
   featured_categories:
-    permalink:         /category/:name/
-    output:            true
+    permalink: /category/:name/
+    output: true
 
   featured_tags:
-    permalink:         /tag/:name/
-    output:            true
+    permalink: /tag/:name/
+    output: true
 
   projects:
-    permalink:         /projects/:path/
-    output:            true
+    permalink: /projects/:path/
+    output: true
 
 
 # File inclusion/exclusion
@@ -257,5 +258,5 @@ sass:
 
 # If you are upgrading form v5 (or earlier), uncomment the lines below,
 # so that the location of the feed XML stays the same.
-# feed:
-#   path:                atom.xml
+feed:
+  path:                atom.xml
