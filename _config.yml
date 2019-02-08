@@ -260,3 +260,8 @@ sass:
 # so that the location of the feed XML stays the same.
 feed:
   path:                atom.xml
+
+
+jekyll_admin:
+  hidden_links:
+    - projects

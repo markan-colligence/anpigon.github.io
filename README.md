@@ -8,7 +8,24 @@ A quicker, cleaner way to get started blogging with [Hydejack](https://qwtel.com
 2. Open terminal, `cd` into root directory (where `_config.yml` is located)
 3. `bundle install` [^1]
 4. `bundle exec jekyll serve`
-5. Open <http://localhost:4000/hydejack-starter-kit/>
+5. Open <http://localhost:4000/>
+6. Navigate to http://localhost:4000/admin to access the administrative interface
+
+## Options
+
+Jekyll Admin related options can be specified in `_config.yml`
+under a key called `jekyll_admin`. Currently it has only one option `hidden_links`
+which is for hiding unwanted links on the sidebar. The following keys under `hidden_links` can be used in order to hide default links;
+
+```yaml
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
+```
 
 ### GitHub Pages
 1. Fork this repository.
