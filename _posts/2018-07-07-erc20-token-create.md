@@ -2,9 +2,9 @@
 layout: post 
 categories: Blockchain
 title: "이더리움 ERC20 토큰(또는 코인) 만들기"
-tagline: 
-tags : ["이더리움","geth","erc20","토큰"] 
-published: true
+# tagline: 
+# tags : ["이더리움","geth","erc20","토큰"] 
+# published: true
 ---
 
 이더리움의 스마트 컨트랙트를 사용하여 토큰(코인)을 만드는 방법을 알아보겠습니다. 이더리움 네트워크에 토큰 컨트랙트를 배포하면 해당 컨트랙트를 코인처럼 사용할 수 있습니다. 
