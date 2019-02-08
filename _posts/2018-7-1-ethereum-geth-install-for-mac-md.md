@@ -2,7 +2,7 @@
 layout: post 
 categories: Blockchain
 title: "이더리움 클라이언트 geth 맥에 설치하기"
-tags : ["이더리움","geth"]
+# tags : ["이더리움","geth"]
 ---
 
 이더리움 클라이언트 중 하나인 geth를 맥에 설치하여 사용하는 방법을 알아보겠습니다.

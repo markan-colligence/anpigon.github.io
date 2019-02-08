@@ -2,7 +2,7 @@
 layout: post
 title: "스텔라 루멘(Stellar lumens) 시작하기"
 category: Blockchain
-tags : ["스텔라 루멘","스텔라","루멘","가상화폐","코인","Stellar lumens","Stellar","lumen","coin"] 
+# tags : ["스텔라 루멘","스텔라","루멘","가상화폐","코인","Stellar lumens","Stellar","lumen","coin"] 
 ---
 
 스텔라<sub>Stellar</sub>는 [리플<sub>Ripple</sub>](https://ripple.com/xrp)에서 하드포크하여 개발되었습니다. 현재 비영리 기업인 스텔라 재단에서 운영하고 있습니다. 거래코드는 XLM이고 총 발행량은 1,000억 개입니다.

@@ -2,7 +2,7 @@
 layout: post
 category: Blockchain
 title: "스텔라 루멘(Stellar Lumens) 토큰 만드는 방법"
-tags : ["스텔라","루멘","가상화폐","코인","Stellar","lumens","coin","XLM"] 
+# tags : ["스텔라","루멘","가상화폐","코인","Stellar","lumens","coin","XLM"] 
 ---
 
 대부분의 ICO는 이더리움<sub>Ethereum</sub>의 토큰으로 발행하고 있습니다. 이렇게 하는 이유는 이더리움은 생태계가 매우 잘되어 있고, 많은 사람들이 이더리움을 사용하고 있기 때문입니다. 
