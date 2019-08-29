@@ -3,5 +3,5 @@ layout: list
 title: "Etc"
 slug: etc
 menu: true
-order: 5
+order: 8
 ---
