@@ -137,7 +137,7 @@ https://github.com/facebook/react-native/issues/20588#issuecomment-448218111
 <br>필요한 의존성 모듈을 설치합니다.
 
 ```bash
-$ yarn add -dev @babel/plugin-transform-flow-strip-types @babel/plugin-proposal-decorators @babel/plugin-proposal-class-properties
+$ yarn add --dev @babel/plugin-transform-flow-strip-types @babel/plugin-proposal-decorators @babel/plugin-proposal-class-properties
 ```
 
 <br>그 다음 `.babelrc` 파일을 다음과 같이 수정합니다.
