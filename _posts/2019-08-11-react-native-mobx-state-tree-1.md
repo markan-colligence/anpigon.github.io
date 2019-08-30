@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "[React Native] MobX State Tree 학습하기 #1"
 comments: true
 categories: reactnative
@@ -181,6 +182,12 @@ $ react-native run-ios
 오류를 해결하면서 학습하다보니 1시간이 금방 지나갔습니다. 그런데 동영상 강의는 5분 밖에 못들었습니다. ㅠ  오늘 학습은 여기까지 입니다. 
 
 
+***
+
+<br>
+
+> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 먼저 작성하였습니다.
+
 <br>
 
  `댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
@@ -190,3 +197,5 @@ $ react-native run-ios
 ***
 
 <center><img src='https://steemitimages.com/400x0/https://cdn.steemitimages.com/DQmQmWhMN6zNrLmKJRKhvSScEgWZmpb8zCeE2Gray1krbv6/BC054B6E-6F73-46D0-88E4-C88EB8167037.jpeg'><h5>vote, reblog, follow <code><a href='https://steemit.com/@anpigon'>@anpigon</a></code></h5></center>
+
+<br>
