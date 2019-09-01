@@ -24,7 +24,7 @@ tags: [reactnative, mobxstatetree]
 
 # 의존성 모듈 설치하기
 
-**MobX State Tree**에 필요한 모듈을 설치합니다. 그리고 **MobX State Tree**를 사용하기 위해 `babel-plugin-transform-decorators-legacy`를 설치합니다. 그리고 ES7 decorators babel plugin을 설정합니다.
+**MobX State Tree**에 필요한 모듈을 설치합니다. 그리고 **MobX State Tree**를 사용하기 위해 `babel-plugin-transform-decorators-legacy`를 설치합니다. 그리고 ES7 decorators babel plugin을 설정합니다. babel plugin 관련 오류 내용은 [#실행-그리고-오류-발생-및-문제-해결하기](/#실행-그리고-오류-발생-및-문제-해결하기)에서 추가로 설명하였습니다.
 
 ```bash
 $ yarn add mobx mobx-react mobx-state-tree babel-plugin-transform-decorators-legacy
@@ -133,12 +133,12 @@ $ yarn add --dev @babel/plugin-proposal-decorators
 
 이 오류의 해결 방법은 아래 링크에서 찾았습니다.
 
-https://github.com/facebook/react-native/issues/20588#issuecomment-448218111
+[https://github.com/facebook/react-native/issues/20588#issuecomment-448218111](https://github.com/facebook/react-native/issues/20588#issuecomment-448218111)
 
 <br>필요한 의존성 모듈을 설치합니다.
 
 ```bash
-$ yarn add -dev @babel/plugin-transform-flow-strip-types @babel/plugin-proposal-decorators @babel/plugin-proposal-class-properties
+$ yarn add --dev @babel/plugin-transform-flow-strip-types @babel/plugin-proposal-decorators @babel/plugin-proposal-class-properties
 ```
 
 <br>그 다음 `.babelrc` 파일을 다음과 같이 수정합니다.
