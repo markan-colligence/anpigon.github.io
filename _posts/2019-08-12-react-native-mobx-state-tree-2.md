@@ -1,9 +1,11 @@
 ---
-layout: post
 title: "[React Native] MobX State Tree 학습하기 #2"
 comments: true
+layout: post
 categories: reactnative
-tags: [reactnative, mobxstatetree]
+tags:
+- reactnative
+- mobxstatetree
 ---
 
 이전글 [**"\[React Native\] MobX State Tree 학습하기 #1"**](/reactnative/2019/08/11/react-native-mobx-state-tree-1/) 에서 이어지는 내용입니다.
@@ -220,13 +222,11 @@ class App extends React.Component {
 
 ![](https://files.steempeak.com/file/steempeak/anpigon/EuSXwg0u-2019-08-112022-19-47.2019-08-112022_21_27.gif)
 
+<br>
+
 ***
 
-<br>
-
-> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 먼저 작성하였습니다.
-
-<br>
+> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 먼저 작성되었습니다.
 
  `댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
 

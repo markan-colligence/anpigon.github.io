@@ -1,9 +1,11 @@
 ---
-layout: post
 title: "[React Native] MobX State Tree 학습하기 #1"
 comments: true
+layout: post
 categories: reactnative
-tags: [reactnative, mobxstatetree]
+tags:
+- reactnative
+- mobxstatetree
 ---
 
 최근에 **["React에서 Mobx 경험기 (Redux와 비교기) - 우아한형제들 기술 블로그"](http://woowabros.github.io/experience/2019/01/02/kimcj-react-mobx.html)** 글을 읽었습니다. **MobX**의 `observable`를 사용하면 **Redux-Saga** 미들웨어를 사용하지 않아도 될 것 같습니다. 그리고 **Redux** 처럼 코딩량도 많지 않을 것 같습니다. 그래서 지금 바로 **Redux**에서 **MobX**로 갈아타기로 결정했습니다. 제 귀는 팔랑귀이며 제 마음은 갈대와도 같습니다. 하지만 **MobX**를 사용하다가 불편하면 다시 **Redux**로 돌아갈지도 모릅니다. 
@@ -181,14 +183,11 @@ $ react-native run-ios
 
 오류를 해결하면서 학습하다보니 1시간이 금방 지나갔습니다. 그런데 동영상 강의는 5분 밖에 못들었습니다. ㅠ  오늘 학습은 여기까지 입니다. 
 
+<br>
 
 ***
 
-<br>
-
-> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 먼저 작성하였습니다.
-
-<br>
+> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 먼저 작성되었습니다.
 
  `댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
 
