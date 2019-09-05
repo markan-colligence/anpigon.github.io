@@ -106,4 +106,4 @@ feed:
 jekyll_admin:
   hidden_links:
     - projects
-show_drafts: true
+show_drafts: false
