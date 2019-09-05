@@ -278,7 +278,7 @@ class App extends React.Component {
 
         <select onChange={this.onSelectUser}>
           <option>- Select user -</option>
-          {{values(group.users).map(user => (
+          &#123;{values(group.users).map(user => (
             <option key={user.id} value={user.id}>
               {user.name}
             </option>
