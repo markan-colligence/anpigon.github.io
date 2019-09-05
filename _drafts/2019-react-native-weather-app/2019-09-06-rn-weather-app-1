@@ -1,0 +1,19 @@
+# Require
+
+```
+node v10 이상
+npm v6 이상
+expo-cli
+```
+
+**expo-cli 설치하기**
+
+```bash
+$ npm install -g expo-cli
+```
+
+**expo 프로젝트 생성하기**
+
+```bash
+expo init fokin-weather
+```
