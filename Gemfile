@@ -29,8 +29,8 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   gem "jekyll-titles-from-headings"
-  gem 'jekyll-admin'
-  gem 'jekyll-manager', group: :jekyll_plugins
+  # gem 'jekyll-admin'
+  # gem 'jekyll-manager', group: :jekyll_plugins
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
