@@ -17,7 +17,7 @@ tags:
 
 ![](https://files.steempeak.com/file/steempeak/anpigon/QYaZgRXD-scrnli_2019-208-2016-20E1848BE185A9E18492E185AE207-51-18.png)
 
-* 강의 링크: [https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models](https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models)
+> 강의 링크: [https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models](https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models)
 
 
 <br>이 레슨은 위시리스트 앱을 만드는 과정을 안내합니다.  우리는 mobx-state-tree(MST)의 핵심 모델을 살펴볼 것입니다. 모델(Model)은 state를 정의하고 유효한지 검사합니다.

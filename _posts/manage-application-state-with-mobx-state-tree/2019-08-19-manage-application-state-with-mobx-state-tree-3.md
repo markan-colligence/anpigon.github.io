@@ -9,10 +9,12 @@ tags:
 - mobxstatetree
 ---
 
-이전글 ["\[React\] Mobx-state-tree #2: Mobx-state-tree 모델에서 Actions을 사용하기"](/react/2019/08/17/manage-application-state-with-mobx-state-tree-2)에서 이어지는 내용입니다. 이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다.
-
 ![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
 * 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)
+
+<br>
+
+이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다. 이전글 ["\[React\] Mobx-state-tree #2: Mobx-state-tree 모델에서 Actions을 사용하기"](/react/2019/08/17/manage-application-state-with-mobx-state-tree-2)에서 이어지는 내용입니다.
 
 ***
 
@@ -20,9 +22,7 @@ tags:
 
 > 강의 링크: [https://egghead.io/lessons/react-test-mobx-state-tree-models-by-recording-snapshots-or-patches](https://egghead.io/lessons/react-test-mobx-state-tree-models-by-recording-snapshots-or-patches)
 
-<br>
-
-3번째 레슨입니다. MST에서 모델을 테스트하는 것은 매우 간단합니다. 왜냐하면 MST는 state가 어떻게 변하는지 정확하게 추적 할 수 있는 도구를 제공하기 때문입니다. snapshots, 액션 호출 또는 patches를 추적하여 액션이 올바르게 작동하는 지를 확인 할 수 있습니다.
+<br>3번째 레슨입니다. MST에서 모델을 테스트하는 것은 매우 간단합니다. 왜냐하면 MST는 state가 어떻게 변하는지 정확하게 추적 할 수 있는 도구를 제공하기 때문입니다. snapshots, 액션 호출 또는 patches를 추적하여 액션이 올바르게 작동하는 지를 확인 할 수 있습니다.
 
 <br>이번 레슨에서 우리는 다음을 배웁니다.
 

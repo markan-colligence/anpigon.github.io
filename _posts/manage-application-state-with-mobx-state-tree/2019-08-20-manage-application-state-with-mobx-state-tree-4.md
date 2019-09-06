@@ -8,10 +8,12 @@ tags:
 - mobxstatetree
 ---
 
-이전글 [**"\[React\] Mobx-state-tree #3 : Snapshots 또는 Patches를 Recording하여 mobx-state-tree 모델 테스트하기"**](/react/2019/08/19/manage-application-state-with-mobx-state-tree-3/)에서 이어지는 내용입니다. 이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다.
-
 ![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
 * 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)
+
+<br>
+
+이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다. 이전글 [**"\[React\] Mobx-state-tree #3 : Snapshots 또는 Patches를 Recording하여 mobx-state-tree 모델 테스트하기"**](/react/2019/08/19/manage-application-state-with-mobx-state-tree-3/)에서 이어지는 내용입니다.
 
 ***
 
@@ -19,7 +21,7 @@ tags:
 
 > 강의 링크: [https://egghead.io/lessons/react-derive-information-from-models-using-views](https://egghead.io/lessons/react-derive-information-from-models-using-views)
 
-4번째 레슨입니다. 이번 레슨에서는 데이터를 선언적으로 derive하고 캐싱하는 views 사용 방법에 대해 학습합니다.
+<br>4번째 레슨입니다. 이번 레슨에서는 데이터를 선언적으로 derive하고 캐싱하는 views 사용 방법에 대해 학습합니다.
 
 <br>이번 레슨에서 우리는 다음을 배웁니다.
 
