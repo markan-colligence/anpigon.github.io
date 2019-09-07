@@ -31,9 +31,9 @@ tags:
 
 ## Models에 Actions 정의하기
 
-WhishList 모델에 `changeName()` 액션을 정의합니다.
+WishList 모델에 `changeName()` 액션을 정의합니다.
 
-`src/models/WhishList.js`
+`src/models/WishList.js`
 
 ```js
 const WishListItem = types
@@ -109,9 +109,9 @@ const WishList = types.model({
 
 ## Actions 테스트 하기
 
-테스트 파일 `WhishList.test.js`에 다음을 입력하고 테스트 해봅시다.
+테스트 파일 `WishList.test.js`에 다음을 입력하고 테스트 해봅시다.
 
-`src/models/WhishList.test.js`
+`src/models/WishList.test.js`
 
 ```js
 it("can add new items", () => {

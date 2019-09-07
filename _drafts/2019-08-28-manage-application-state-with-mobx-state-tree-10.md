@@ -59,7 +59,7 @@ import { getSnapshot } from 'mobx-state-tree'; // add here
 
 import App from "./components/App";
 
-import { WishList } from "./models/WhishList";
+import { WishList } from "./models/WishList";
 
 let initialState = {
   items: [
@@ -81,7 +81,7 @@ if(module.hot) {
     renderApp();
   });
 
-  module.hot.accept(["./models/WhishList"], () => {
+  module.hot.accept(["./models/WishList"], () => {
     // new model definitions
     const snapshot = getSnapshot(wishList);
     wishList = WishList.create(snapshot);

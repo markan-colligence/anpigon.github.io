@@ -113,7 +113,7 @@ import ReactDOM from "react-dom";
 
 import App from "./components/App";
 
-import { WishList } from "./models/WhishList";
+import { WishList } from "./models/WishList";
 
 const wishList = WishList.create({
   items: [

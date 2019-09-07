@@ -76,9 +76,9 @@ export default observer(WishListItemView);
 
 이제 **WishListItemView** 모델에 삭제 액션을 추가하겠습니다.
 
-`WhishList.js` 파일을 열고, `WishListItem` 모델을 수정합니다. 그리고 `WishListItem` 모델에 `remove()` 액션을 추가합니다. 자신(self)은 제거(remove) 할 수 없기 때문에, `remove()` 액션에서 다시 부모의 `remove()` 액션을 호출합니다. 부모를 찾기 위해서 `getParent`를 사용합니다.
+`WishList.js` 파일을 열고, `WishListItem` 모델을 수정합니다. 그리고 `WishListItem` 모델에 `remove()` 액션을 추가합니다. 자신(self)은 제거(remove) 할 수 없기 때문에, `remove()` 액션에서 다시 부모의 `remove()` 액션을 호출합니다. 부모를 찾기 위해서 `getParent`를 사용합니다.
 
-`src/models/WhishList.js`
+`src/models/WishList.js`
 
 ```js
 import { types, getParent } from "mobx-state-tree"; // add here
@@ -106,7 +106,7 @@ export const WishListItem = types
 
 그다음 `WishList` 모델을 수정합니다. 여기에도 `remove()` 액션을 추가합니다.
 
-`src/models/WhishList.js`
+`src/models/WishList.js`
 
 ```js
 export const WishList = types.model({
@@ -127,7 +127,7 @@ export const WishList = types.model({
 
 <br> **mobx-state-tree**의 `destroy`를 사용하면, `remove()`를 더 간단하게 구현할 수 있습니다.
 
-`src/models/WhishList.js`
+`src/models/WishList.js`
 
 ```js
 import { types, getParent, destroy } from "mobx-state-tree"; // add here

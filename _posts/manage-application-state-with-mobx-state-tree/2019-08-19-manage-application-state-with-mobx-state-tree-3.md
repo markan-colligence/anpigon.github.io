@@ -37,7 +37,7 @@ tags:
 Model의 전체 속성을 테스트하기 위해서 MST에서 제공하는 `getSnapshot` 함수를 사용합니다.  `getSnapshot`는 모델의 전체 트리 상태를 immutable하고 순수한 JSON 데이터로 만들어줍니다. 테스트 코드를 다음과 같이 작성합니다.
 snapshots에 대해서는 [MST 깃북](https://mobx-state-tree.gitbook.io/docs/concepts/snapshots)에 추가 설명이 있습니다.
 
-`src/models/WhishList.test.js`
+`src/models/WishList.test.js`
 
 ```js
 import { getSnapshot } from 'mobx-state-tree';
@@ -65,7 +65,7 @@ it("can add new items", () => {
 
 그리고 `toMatchSnapshot` 함수를 사용하면 스냅샷을 기록합니다.
 
-`src/models/WhishList.test.js`
+`src/models/WishList.test.js`
 
 ```js
 it("can add new items", () => {
@@ -90,7 +90,7 @@ it("can add new items", () => {
 
 이제 `onSnapshot` 함수를 사용하여 모델이 변경될 때마다 스냅샷을 states에 저장하겠습니다. 그리고 `toMatchSnapshot` 함수를 사용하여 스냅샷이 어떻게 변화 했는지 기록합니다.
 
-`src/models/WhishList.test.js`
+`src/models/WishList.test.js`
 
 ```js
 import { getSnapshot, onSnapshot } from "mobx-state-tree";
@@ -118,7 +118,7 @@ it("can add new items", () => {
 
 `onPatch` 함수를 사용한 테스트를 수행하고 나서 기록을 보면 모델의 변화에 대해서 살펴볼 수 있습니다. 어떤 작업을 수행했는지, 몇번째 항목의 값이 어떻게 변경되었는지를 확인 할 수 있습니다.
 
-`src/models/WhishList.test.js`
+`src/models/WishList.test.js`
 
 ```js
 import { getSnapshot, onSnapshot, onPatch } from "mobx-state-tree";

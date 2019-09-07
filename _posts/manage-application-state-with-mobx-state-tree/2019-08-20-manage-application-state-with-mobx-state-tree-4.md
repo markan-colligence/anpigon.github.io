@@ -31,9 +31,9 @@ tags:
 
 ## computed properties 사용하기
 
-`WhishList.js` 파일을 수정합니다. WhishList 모델에 totalPrice 필드를 추가합니다.
+`WishList.js` 파일을 수정합니다. WishList 모델에 totalPrice 필드를 추가합니다.
 
-`src/models/WhishList.js`
+`src/models/WishList.js`
 
 ```js
 const WishList = types
@@ -67,9 +67,9 @@ export const WishList = types
 
 ## 모델의 view 테스트 하기
 
-다음과 같이 `WhishList.test.js` 파일에 테스트 케이스를 작성합니다. 
+다음과 같이 `WishList.test.js` 파일에 테스트 케이스를 작성합니다. 
 
-`src/models/WhishList.test.js`
+`src/models/WishList.test.js`
 
 ```js
 it("can calculate the total price of a wishlist", () => {
@@ -95,9 +95,9 @@ it("can calculate the total price of a wishlist", () => {
 
 mobx에서 제공하는 `reaction` 유틸은 모델의 데이터 변화를 감지합니다. 모델에 변화가 발생하였을때 `totalPrice` 값의 변화를 살펴봅시다.
 
-`WhishList.test.js` 파일에 다음 코드를 추가로 입력합니다.
+`WishList.test.js` 파일에 다음 코드를 추가로 입력합니다.
 
-`src/models/WhishList.test.js`
+`src/models/WishList.test.js`
 
 ```js
 import { reaction } from 'mobx';

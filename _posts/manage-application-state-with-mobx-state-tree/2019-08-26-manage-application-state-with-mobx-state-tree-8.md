@@ -25,7 +25,7 @@ tags:
 
 # Create an Entry Form to Add Models to the State Tree
 
-* 강의 링크: [https://egghead.io/lessons/react-create-an-entry-form-to-add-models-to-the-state-tree](https://egghead.io/lessons/react-create-an-entry-form-to-add-models-to-the-state-tree)
+> 강의 링크: [https://egghead.io/lessons/react-create-an-entry-form-to-add-models-to-the-state-tree](https://egghead.io/lessons/react-create-an-entry-form-to-add-models-to-the-state-tree)
 
 <br><br>
 
@@ -41,7 +41,7 @@ import { observer } from "mobx-react";
 
 import WishListItemEdit from "./WishListItemEdit";
 
-import { WishListItem, WishList } from "../models/WhishList";
+import { WishListItem, WishList } from "../models/WishList";
 
 class WishListItemEntry extends Component {
   constructor() {

@@ -74,15 +74,15 @@ $ yarn add mobx mobx-react mobx-state-tree
 
 ![](https://files.steempeak.com/file/steempeak/anpigon/rCAs2zKU-E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA202019-08-1620E1848BE185A9E18492E185AE206.38.54.png)
 
-<br>그리고 `WhishList.js` 파일을 생성합니다.
+<br>그리고 `WishList.js` 파일을 생성합니다.
 
 ![](https://files.steempeak.com/file/steempeak/anpigon/SbF32haI-E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA202019-08-1620E1848BE185A9E18492E185AE206.40.18.png)
 
- <br>`WhishList.js` 파일에는 다음 내용을 입력합니다.
+ <br>`WishList.js` 파일에는 다음 내용을 입력합니다.
 
 
 ```js
-// src/models/WhishList.js
+// src/models/WishList.js
 
 import { types } from "mobx-state-tree";
 
@@ -114,16 +114,16 @@ export const WishListItem = types.model({
 <br>
 <br>
 
-# WhishList 모델 테스트 하기
+# WishList 모델 테스트 하기
 
-`WhishList.test.js` 파일을 새로 생성합니다.
+`WishList.test.js` 파일을 새로 생성합니다.
 
 ![](https://files.steempeak.com/file/steempeak/anpigon/fKYB4AlR-E18489E185B3E1848FE185B3E18485E185B5E186ABE18489E185A3E186BA202019-08-1620E1848BE185A9E18492E185AE206.59.59.png)
 
-<br>`WhishList.test.js` 파일에는 다음 내용을 입력합니다.
+<br>`WishList.test.js` 파일에는 다음 내용을 입력합니다.
 
 ```js
-import { WishListItem, WishList } from "./WhishList";
+import { WishListItem, WishList } from "./WishList";
 
 it("can create a instance of a model", () => {
   const item = WishListItem.create({
