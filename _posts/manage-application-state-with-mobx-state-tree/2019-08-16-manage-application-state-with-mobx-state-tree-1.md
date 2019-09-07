@@ -8,21 +8,9 @@ tags:
 - mobxstatetree
 ---
 
-![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
-* 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)
+이 레슨은 위시리스트 앱을 만드는 과정을 안내합니다.  우리는 mobx-state-tree(MST)의 핵심 모델을 살펴볼 것입니다. 모델(Model)은 state를 정의하고 유효한지 검사합니다.
 
-***
-
-## Describe Your Application Domain Using mobx-state-tree(MST) Models
-
-![](https://files.steempeak.com/file/steempeak/anpigon/QYaZgRXD-scrnli_2019-208-2016-20E1848BE185A9E18492E185AE207-51-18.png)
-
-> 강의 링크: [https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models](https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models)
-
-
-<br>이 레슨은 위시리스트 앱을 만드는 과정을 안내합니다.  우리는 mobx-state-tree(MST)의 핵심 모델을 살펴볼 것입니다. 모델(Model)은 state를 정의하고 유효한지 검사합니다.
-
-<br>이번 레슨에서 우리는 다음을 배웁니다.
+이번 레슨에서 우리는 다음을 배웁니다.
 
 * `types.Model`를 사용하여 모델 정의하기
 * `Model.create`를 사용하여 JSON에서 모델 인스턴스화하기
@@ -35,9 +23,22 @@ tags:
 
 <br>
 
-***
+> 이 포스팅은 아래 동영상 강의를 보고 학습한 내용을 기록한 글입니다.
+
+![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
+
+![](https://files.steempeak.com/file/steempeak/anpigon/QYaZgRXD-scrnli_2019-208-2016-20E1848BE185A9E18492E185AE207-51-18.png)
+
+<sup>* 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)</sup>
 
 <br>
+
+***
+
+# Describe Your Application Domain Using mobx-state-tree(MST) Models
+
+> 강의 링크: [https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models](https://egghead.io/lessons/react-describe-your-application-domain-using-mobx-state-tree-mst-models)
+
 
 ## wishlist 프로젝트 생성하기
 

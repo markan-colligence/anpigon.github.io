@@ -8,23 +8,9 @@ tags:
 - mobxstatetree
 ---
 
-![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
-* 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)
+2번째 레슨입니다. mobx-state-tree는 Model의 데이터를 수정하기 위해서는 반드시 actions를 정의하고 사용해야 합니다. 
 
-<br>
-
-이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다. 이전글 [**"\[React\] Mobx-state-tree #1: Mobx-state-tree를 사용해서 Reat State 관리하기"**](/react/2019/08/16/manage-application-state-with-mobx-state-tree-1)에서 이어지는 내용입니다.
-
-***
-
-## Attach Behavior to mobx-state-tree Models Using Actions
-
-> 강의 링크: [https://egghead.io/lessons/react-attach-behavior-to-mobx-state-tree-models-using-actions](https://egghead.io/lessons/react-attach-behavior-to-mobx-state-tree-models-using-actions)
-
-
-<br>2번째 레슨입니다. mobx-state-tree는 Model의 데이터를 수정하기 위해서는 반드시 actions를 정의하고 사용해야 합니다. 
-
-<br>이번 레슨에서 우리는 다음을 배웁니다.
+이번 레슨에서 우리는 다음을 배웁니다.
 
 * models에 actions을 정의하는 방법
 * `self`를 사용하여 문제를 해결하는 방법
@@ -32,11 +18,18 @@ tags:
 
 <br>
 
-***
+> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 [**"\[React\] Mobx-state-tree #1: Mobx-state-tree를 사용해서 Reat State 관리하기"**](/react/2019/08/16/manage-application-state-with-mobx-state-tree-1)에서 이어지는 내용입니다.
 
 <br>
 
-# Models에 Actions 정의하기
+***
+
+# Attach Behavior to mobx-state-tree Models Using Actions
+
+> 강의 링크: [https://egghead.io/lessons/react-attach-behavior-to-mobx-state-tree-models-using-actions](https://egghead.io/lessons/react-attach-behavior-to-mobx-state-tree-models-using-actions)
+
+
+## Models에 Actions 정의하기
 
 WhishList 모델에 `changeName()` 액션을 정의합니다.
 
@@ -111,9 +104,8 @@ const WishList = types.model({
     self.items.push(item);
   }
 }));
-````
+```
 
-<br><br>
 
 ## Actions 테스트 하기
 

@@ -8,22 +8,9 @@ tags:
 - mobxstatetree
 ---
 
- ![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
-* 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)
+6번째 레슨입니다. 이번 레슨에서는 `observer` 래퍼를 사용하여, React 컴포넌트가 자동으로 업데이트되는 과정을 배웁니다.
 
-<br>
-
-이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다. 이전글 [**"\[React\] Mobx-state-tree #5 : React에서 mobx-state-tree 모델 렌더링하기"**](/react/2019/08/24/manage-application-state-with-mobx-state-tree-5/)에서 이어지는 내용입니다.
-
-***
-
-## Build Forms with React to Edit mobx-state-tree Models
-
-> 강의 링크: [https://egghead.io/lessons/react-build-forms-with-react-to-edit-mobx-state-tree-models](https://egghead.io/lessons/react-build-forms-with-react-to-edit-mobx-state-tree-models)
-
-<br>6번째 레슨입니다. 이번 레슨에서는 `observer` 래퍼를 사용하여, React 컴포넌트가 자동으로 업데이트되는 과정을 배웁니다.
-
-<br>우리는 다음을 배우게 됩니다.
+우리는 다음을 배우게 됩니다.
 
 *  컴포넌트(component)에서 모델 액션(model actions)을 호출하는 방법을 배웁니다.
 * `clone`를 사용하여 모델 인스턴스(model instance)를 완전하게 복제하는 방법을 배웁니다.
@@ -31,12 +18,18 @@ tags:
 
 <br>
 
+> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 [**"\[React\] Mobx-state-tree #5 : React에서 mobx-state-tree 모델 렌더링하기"**](/react/2019/08/24/manage-application-state-with-mobx-state-tree-5/)에서 이어지는 내용입니다.
+
+<br>
+
 ***
 
-<br>
-<br>
+# Build Forms with React to Edit mobx-state-tree Models
 
-# 수정 화면 만들기
+> 강의 링크: [https://egghead.io/lessons/react-build-forms-with-react-to-edit-mobx-state-tree-models](https://egghead.io/lessons/react-build-forms-with-react-to-edit-mobx-state-tree-models)
+
+
+## 수정 화면 만들기
 
 먼저 `WishListItemEdit.js` 파일을 생성합니다. 정보를 수정할 수 있는 컴포넌트입니다.
 
@@ -135,9 +128,8 @@ export default observer(WishListItemView);
 ![](https://files.steempeak.com/file/steempeak/anpigon/EeHYDTo8-2019-08-242012-27-02.2019-08-242012_27_27.gif)
 
 <br>
-<br>
 
-# 수정 취소 기능 만들기
+## 수정 취소 기능 만들기
 
 그다음 취소 ❎버튼을 추가하겠습니다. 다시 `WishListItemView.js` 파일을 열어서 `renderEditable()` 함수를 수정합니다.
 

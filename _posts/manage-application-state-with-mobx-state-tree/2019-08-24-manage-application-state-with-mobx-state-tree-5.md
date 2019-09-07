@@ -8,22 +8,9 @@ tags:
 - mobxstatetree
 ---
 
- ![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
-* 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)
+5번째 레슨입니다. 이번 레슨에서는 `observer` 래퍼를 사용하여, React 컴포넌트가 자동으로 업데이트되는 과정을 배웁니다.
 
-<br>
-
-이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다. 이전글 [**"\[React\] Mobx-state-tree #4 : Views를 사용하여 모델에서 정보 보여주기"**](/react/2019/08/20/manage-application-state-with-mobx-state-tree-4/)에서 이어지는 내용입니다.
-
-***
-
-## Render mobx-state-tree Models in React
-
-> 강의 링크: [https://egghead.io/lessons/react-render-mobx-state-tree-models-in-react](https://egghead.io/lessons/react-render-mobx-state-tree-models-in-react)
-
-<br>5번째 레슨입니다. 이번 레슨에서는 `observer` 래퍼를 사용하여, React 컴포넌트가 자동으로 업데이트되는 과정을 배웁니다.
-
-<br>이번 레슨에서 우리는 다음을 배웁니다.
+이번 레슨에서 우리는 다음을 배웁니다.
 
 *  **mobx-react**의 옵저버(observer)를 사용하여, React 컴포넌트를 업데이트하고 재렌더링하는 방법을 알아봅니다.
 * 컴포넌트에 모델을 사용하면 컴포넌트는 멍청해진다. 그래서 가끔 stateless function components처럼 된다.
@@ -31,9 +18,17 @@ tags:
 
 <br>
 
+> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 [**"\[React\] Mobx-state-tree #4 : Views를 사용하여 모델에서 정보 보여주기"**](/react/2019/08/20/manage-application-state-with-mobx-state-tree-4/)에서 이어지는 내용입니다.
+
+<br>
+
 ***
 
-<br><br>
+## Render mobx-state-tree Models in React
+
+> 강의 링크: [https://egghead.io/lessons/react-render-mobx-state-tree-models-in-react](https://egghead.io/lessons/react-render-mobx-state-tree-models-in-react)
+
+<br>
 
 우선 몇가지 단일 컴포넌트를 만들어 보겠습니다. 
 
@@ -151,10 +146,7 @@ ReactDOM.render(<App wishList={wishList} />, document.getElementById("root"));
 
 ***
 
-<br><br>
-
 ## MobX observer 사용하기
-
 
 `index.js` 파일에 맨 아래에 다음 코드를 추가합니다. 1초마다 가격에 변화를 주는 코드입니다.
 

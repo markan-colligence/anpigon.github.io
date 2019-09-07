@@ -8,22 +8,9 @@ tags:
 - mobxstatetree
 ---
 
-![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
-* 출처: [https://egghead.io/courses/manage-application-state-with-mobx-state-tree](https://egghead.io/courses/manage-application-state-with-mobx-state-tree)
+4번째 레슨입니다. 이번 레슨에서는 데이터를 선언적으로 derive하고 캐싱하는 views 사용 방법에 대해 학습합니다.
 
-<br>
-
-이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글입니다. 이전글 [**"\[React\] Mobx-state-tree #3 : Snapshots 또는 Patches를 Recording하여 mobx-state-tree 모델 테스트하기"**](/react/2019/08/19/manage-application-state-with-mobx-state-tree-3/)에서 이어지는 내용입니다.
-
-***
-
-# Derive Information from Models Using Views
-
-> 강의 링크: [https://egghead.io/lessons/react-derive-information-from-models-using-views](https://egghead.io/lessons/react-derive-information-from-models-using-views)
-
-<br>4번째 레슨입니다. 이번 레슨에서는 데이터를 선언적으로 derive하고 캐싱하는 views 사용 방법에 대해 학습합니다.
-
-<br>이번 레슨에서 우리는 다음을 배웁니다.
+이번 레슨에서 우리는 다음을 배웁니다.
 
 *  모델에서 views를  introduce하는 방법.
 * 계산된 값(computed properties)은 Mobx computed fields에 의해 작동.
@@ -31,9 +18,18 @@ tags:
 
 <br>
 
+> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 [**"\[React\] Mobx-state-tree #3 : Snapshots 또는 Patches를 Recording하여 mobx-state-tree 모델 테스트하기"**](/react/2019/08/19/manage-application-state-with-mobx-state-tree-3/)에서 이어지는 내용입니다.
+
+<br>
+
 ***
 
-# computed properties 사용하기
+# Derive Information from Models Using Views
+
+> 강의 링크: [https://egghead.io/lessons/react-derive-information-from-models-using-views](https://egghead.io/lessons/react-derive-information-from-models-using-views)
+
+
+## computed properties 사용하기
 
 `WhishList.js` 파일을 수정합니다. WhishList 모델에 totalPrice 필드를 추가합니다.
 
@@ -65,9 +61,8 @@ export const WishList = types
   }))
 ```
 
-<br><br>
 
-# 모델의 view 테스트 하기
+## 모델의 view 테스트 하기
 
 다음과 같이 `WhishList.test.js` 파일에 테스트 케이스를 작성합니다. 
 
@@ -92,9 +87,8 @@ it("can calculate the total price of a wishlist", () => {
 });
 ```
 
-<br><br>
 
-# reaction 사용하여 모델의 view 테스트 하기
+## reaction 사용하여 모델의 view 테스트 하기
 
 mobx에서 제공하는 `reaction` 유틸은 모델의 데이터 변화를 감지합니다. 모델에 변화가 발생하였을때 `totalPrice` 값의 변화를 살펴봅시다.
 

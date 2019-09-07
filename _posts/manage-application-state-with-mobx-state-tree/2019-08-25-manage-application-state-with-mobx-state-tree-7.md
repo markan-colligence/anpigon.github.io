@@ -1,5 +1,5 @@
 ---
-title: "[React] Mobx-state-tree 학습하기 #7 : Remove Model Instances from the Tree"
+title: "[React] Mobx-state-tree #7 : Remove Model Instances from the Tree"
 comments: true
 layout: post
 categories: react
@@ -8,26 +8,9 @@ tags:
 - mobxstatetree
 ---
 
-이전글 [**"\[React\] Mobx-state-tree 학습하기 #6 : Views를 사용하여 모델에서 정보 보여주기"**](/zzan/@anpigon/react-native-manage-application-state-with-mobx-state-tree-6)에서 이어지는 내용입니다. 참고로 이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글이기 때문에 보팅 안해주셔서 됩니다.  많은 분들이 코딩에 흥미를  느꼈으면 좋겠습니다.  ㅋ
+7번째 레슨입니다. 이번 레슨에서는 MST의 tree semantics에 대해서 좀더 깊이 배워봅니다.
 
-<br>
-
-***
-
-![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
-* 출처: https://egghead.io/courses/manage-application-state-with-mobx-state-tree
-
-***
-
-<br>
-
-## Remove Model Instances from the Tree
-
-* 강의 링크: https://egghead.io/lessons/react-remove-model-instances-from-the-tree
-
-<br>7번째 레슨입니다. 이번 레슨에서는 MST의 tree semantics에 대해서 좀더 깊이 배워봅니다.
-
-<br>우리는 다음을 배우게 됩니다.
+우리는 다음을 배우게 됩니다.
 
 *  액션(Actions) 자신의 하위트리(subtree)만 변경 가능합니다.
 * `getParent`를 사용해서 현재 모델 인스턴스의 부모를 찾아봅니다.
@@ -35,9 +18,17 @@ tags:
 
 <br>
 
+> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 [**"\[React\] Mobx-state-tree #6: React에서 mobx-state-tree Models 수정하기"**](/react/2019/08/25/manage-application-state-with-mobx-state-tree-6/)에서 이어지는 내용입니다.
+
+<br>
+
 ***
 
-<br><br>
+# Remove Model Instances from the Tree
+
+> 강의 링크: [https://egghead.io/lessons/react-remove-model-instances-from-the-tree](https://egghead.io/lessons/react-remove-model-instances-from-the-tree)
+
+<br>
 
 먼저 `WishListItemView.js` 파일을 수정합니다. `WishListItemView` 컴포넌트에 삭제 ❎ 버튼을 만듭니다.
 
@@ -154,8 +145,6 @@ export const WishList = types.model({
 
 ***
 
-<br><br>
-
 ## MobX observer 사용하기
 
 
@@ -188,13 +177,12 @@ export default observer(WishListView);
 
 ![](https://files.steempeak.com/file/steempeak/anpigon/XIh7Smjo-2019-08-182013-22-41.2019-08-182013_23_25.gif)
 
-
 <br>
 <br>
 
 ***
 
-> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 먼저 작성되었습니다.
+> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 작성하였습니다.
 
  `댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
 
