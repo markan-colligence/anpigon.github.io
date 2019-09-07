@@ -7,6 +7,7 @@ tags:
 - react
 - mobxstatetree
 ---
+
 13번째 레슨입니다. MST stores all data in a tree, where each piece of data lives at one unique location. In most state management solutions, this means you need to introduce weakly typed, primitive 'foreign keys' to refer to other parts of the state tree. But in MST you can leverage the concepts of references and identifiers to relate model instances to each other. MST will do the normalization behind the scenes for you.
 
 <br>우리는 이번 레슨에서 다음을 배우게 됩니다.

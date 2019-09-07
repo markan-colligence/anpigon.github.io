@@ -41,7 +41,7 @@ tags:
 `src/models/Group.js`
 
 ```js
-import { types, flow, applySnapshot } from "mobx-state-tree";
+import // (...)
 
 export const User = types
   .model({ // (...) })})
@@ -119,6 +119,12 @@ fetch를 생성할 때 signal를 전달합니다. AbortController에서 나온 s
 `src/models/Group.js`
 
 ```js
+import // (...)
+
+export const User = types
+  .model({ // (...) })})
+  .actions(self => ({ // (...) }) }));
+
 export const Group = types
   .model({
     users: types.map(User)
