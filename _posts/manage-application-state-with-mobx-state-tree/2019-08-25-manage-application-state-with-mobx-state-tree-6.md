@@ -120,7 +120,6 @@ class WishListItemView extends Component {
 }
 
 export default observer(WishListItemView);
-
 ```
 
 <br>이제 수정 ✏️버튼을 누르면 수정 화면이 나타난다.

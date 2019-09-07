@@ -58,7 +58,10 @@ export const WishList = types
     get totalPrice() {
       return self.items.reduce((sum, entry) => sum + entry.price, 0); // 총 가격 계산
     }
-  }))
+  })
+  .actions(self => ({
+    add(item) { // (...) }
+  }));
 ```
 
 
