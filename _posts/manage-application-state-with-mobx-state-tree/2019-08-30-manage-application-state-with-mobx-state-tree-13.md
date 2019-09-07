@@ -20,7 +20,7 @@ tags:
 <br>
 
 
-> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 ["\[React\] Mobx-state-tree #12 : Flow를 사용하여 비동기 프로세스 정의하기"](react/2019/08/29/manage-application-state-with-mobx-state-tree-12/)에서 이어지는 내용입니다.
+> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 ["\[React\] Mobx-state-tree #12 : Flow를 사용하여 비동기 프로세스 정의하기"](/react/2019/08/29/manage-application-state-with-mobx-state-tree-12/)에서 이어지는 내용입니다.
 
 <br>
 

@@ -25,7 +25,8 @@ tags:
 
 # Loading Data from the Server
 
-> 강의 링크: https://egghead.io/lessons/react-loading-data-from-the-server
+> 강의 링크: [https://egghead.io/lessons/react-loading-data-from-the-server
+](https://egghead.io/lessons/react-loading-data-from-the-server)
 
 <br>
 <br>
