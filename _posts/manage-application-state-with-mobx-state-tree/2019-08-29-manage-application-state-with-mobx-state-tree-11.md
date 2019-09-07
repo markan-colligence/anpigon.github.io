@@ -1,5 +1,5 @@
 ---
-title: "[React] Mobx-state-tree 학습하기 #11 : 더 많은 mobx-state-tree Types 배우기: map, literal, union, enumeration"
+title: "[React] Mobx-state-tree #11 : 더 많은 mobx-state-tree Types 배우기: map, literal, union, enumeration"
 comments: true
 layout: post
 categories: react
@@ -8,26 +8,9 @@ tags:
 - mobxstatetree
 ---
 
-이전글 ["\[React\] Mobx-state-tree 학습하기 #10 : Model Definitions Change되면 Hot Module Reloading를 사용하여 Model Tree State 복원하기"](/zzan/@anpigon/react-mobx-state-tree-10-model-definitions-change-hot-module-reloading-model-tree-state)에서 이어지는 내용입니다. 참고로 이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글이기 때문에 보팅 안해주셔서 됩니다.  많은 분들이 코딩에 흥미를  느꼈으면 좋겠습니다.  ㅋ
+11번째 레슨입니다. 이번 레슨에서는 그룹 및 사용자의 개념을 소개합니다. 그룹 내에 여러 사용자를 관리할 수 있습니다. 그리고 각 사용자들은 각각의 위시 리스트를 가질 수 ​​있습니다. 또한 union 타입과 타입 discrimination의 강력한 기능을 간단히 살펴볼 것입니다.
 
-<br>
-
-***
-
-![](https://files.steempeak.com/file/steempeak/anpigon/sYISPibs-E1848CE185A6E18486E185A9E186A820E1848BE185A5E186B9E18482E185B3E186AB20E18483E185B5E1848CE185A1E1848BE185B5E186AB.png)
-* 출처: https://egghead.io/courses/manage-application-state-with-mobx-state-tree
-
-***
-
-<br>
-
-## More mobx-state-tree Types: map, literal, union, and enumeration
-
-* 강의 링크: https://egghead.io/lessons/react-more-mobx-state-tree-types-map-literal-union-and-enumeration
-
-<br>11번째 레슨입니다. 이번 레슨에서는 그룹 및 사용자의 개념을 소개합니다. 그룹 내에 여러 사용자를 관리할 수 있습니다. 그리고 각 사용자들은 각각의 위시 리스트를 가질 수 ​​있습니다. 또한 union 타입과 타입 discrimination의 강력한 기능을 간단히 살펴볼 것입니다.
-
-<br>우리는 이번 레슨에서 다음을 배우게 됩니다.
+우리는 이번 레슨에서 다음을 배우게 됩니다.
 
 - key로 데이터를 저장하기 위해 type map 사용하기
 - single value types를 생성하기 위해  literals 사용하기
@@ -38,15 +21,23 @@ tags:
 
 <br>
 
-___
+> 이전글 ["\[React\] Mobx-state-tree #10 : Model Definitions Change되면 Hot Module Reloading를 사용하여 Model Tree State 복원하기"](/react/2019/08/28/manage-application-state-with-mobx-state-tree-10/)에서 이어지는 내용입니다. 참고로 이 포스팅은 제가 학습한 내용을 노트에 정리하듯이 기록하여 올리는 글이기 때문에 보팅 안해주셔서 됩니다.  많은 분들이 코딩에 흥미를  느꼈으면 좋겠습니다.  ㅋ
+
+<br>
+
+***
+
+# More mobx-state-tree Types: map, literal, union, and enumeration
+
+> 강의 링크: [https://egghead.io/lessons/react-more-mobx-state-tree-types-map-literal-union-and-enumeration](https://egghead.io/lessons/react-more-mobx-state-tree-types-map-literal-union-and-enumeration)
+
 
 <br>
 
 이제 사용자 그룹을 만들고 각 사용자가 각자의 위시 리스트를 가지도록 모델을 개선해 봅시다.
 
-<br>
 
-# User 모델 만들기
+## User 모델 만들기
 
 `groups.js` 파일을 새로 생성합니다. 그리고 User 모델을 정의 합니다. User 모델은 `id` 와 `name`, 그리고 `gender` 속성을 가집니다.  
 
@@ -56,20 +47,17 @@ ___
 import { types } from 'mobx-state-tree';
 
 const User = types.model({
-	id: types.string,
-	name: types.string,
-	gender: types.union(types.literal('m'), types.literal('f'))
+  id: types.string,
+  name: types.string,
+  gender: types.union(types.literal('m'), types.literal('f'))
 });
 ```
-
-
 
 타입을 선택할 수 있는 유형을 일반적으로 union이라 합니다. 두 가지 타입을 결합하여 gender을 표현하게 됩니다. 여기서  `gender` 값은 반드시 `m` 또는 `f` 여야합니다.
 
 <br>
-<br>
 
-# Quokka 사용하여 빠르게 테스트해보기
+## Quokka 사용하여 빠르게 테스트해보기
 
 VSCode의 익스텐션 프로그램 **Quokka**를 사용하면 자바스크립트 또는 타입스크립트를 스크래치 패드에서 빠르게 만들고 실행할 수 있습니다. 
 
@@ -120,20 +108,20 @@ console.log(Woman.is(someone))
 ![](https://files.steempeak.com/file/steempeak/anpigon/WFOjsL5m-_2019-08-25_20.15.04.png)
 
 <br>
-<br>
 
-# enumeration 사용하기
+## enumeration 사용하기
 
-literal을 union하는 방식인 `types.union(types.literal('m'), types.literal('f'))` 이 가장 일반적인 패턴입니다. 하지만 더 간단한 표기법이 있습니다. 이를 **enumeration**이라고 합니다. User 모델의 `gender` Type을 **enumeration**를 사용하여 다시 표현하면 `types.enumeration("gender", ["m", "f"])`가 됩니다.
+literal을 union하는 방식인 `types.union(types.literal('m'), types.literal('f'))` 이 가장 일반적인 패턴입니다. 하지만 더 간단한 표기법이 있습니다. 이를 **enumeration**이라고 합니다. User 모델의 `gender` Type을 **enumeration**를 사용하여 표현하면 `types.enumeration("gender", ["m", "f"])`가 됩니다.
 
 `src/models/Group.js`
 ```js
 import { types } from 'mobx-state-tree';
 
 export const User = types.model({
-	id: types.string,
-	name: types.string,
-	gender: types.enumeration("gender", ["m", "f"])
+  id: types.string,
+  name: types.string,
+  // gender: types.union(types.literal('m'), types.literal('f')) // remove here
+  gender: types.enumeration("gender", ["m", "f"]) // add here
 });
 ```
 
@@ -146,24 +134,23 @@ import { types } from 'mobx-state-tree';
 import { WishList } from "./WishList"; // add here
 
 export const User = types.model({
-	id: types.string,
-	name: types.string,
-	gender: types.enumeration("gender", ["m", "f"])
-
-	wishList: types.optional(WishList, {}) // add here
+  id: types.string,
+  name: types.string,
+  gender: types.enumeration("gender", ["m", "f"])
+  wishList: types.optional(WishList, {}) // add here
 });
 ```
 
 <br>
-<br>
 
-# Group 모델 만들기
+## Group 모델 만들기
 
 이제 Group을 정의 합니다. Group은 User 그룹이라고 할 수 있습니다. 여기에서는 Map를 사용하였습니다. 하지만 우리는 Array를 사용할 수도 있습니다. `Group.js` 파일 맨 아래에 다음 코드를 입력합니다.
 
 `src/models/Group.js`
+
 ```js
-// ...
+// (...)
 
 export const Group = types.model({
   users: types.map(User)
@@ -172,7 +159,7 @@ export const Group = types.model({
 
 
 <br>
-<br>
+
 다음은 지금까지 작성된 Group.js 파일의 전체 내용입니다.
 
 `src/models/Group.js`
@@ -193,19 +180,18 @@ export const Group = types.model({
 ```
 
 <br>
-<br>
 
-# UI 수정하기
+## UI 수정하기
 
 모델을 재구성했으니 이제 UI를 수정해야합니다. `index.js` 파일을 편집합니다. 
 
-Group 모델을 **import** 합니다. 그리고 간단한 작업을 위해 `initialState`에는 심슨 가족 데이터 셋트를 미리 준비했습니다.
+**Group** 모델을 **import** 합니다. 그리고 간단한 작업을 위해 `initialState`에는 심슨 가족 데이터 셋트를 미리 준비했습니다. 그리고 이제 **App** 컴포넌트에는 `wishList`가 아닌 `group`을 전달합니다.
 
 `src/index.js`
-```
-// ...
 
-import { Group } from "./models/Group";
+```js
+import // (...)
+import { Group } from "./models/Group"; // add here
 
 let initialState = {
   usres: {
@@ -237,20 +223,20 @@ let initialState = {
   }
 }
 
-// ...
-
 let group = Group.create(initialState);
 
 function renderApp() {
   ReactDOM.render(<App group={group} />, document.getElementById("root"));
 }
 
-// ...
+renderApp();
+
+// (...)
 ```
 
-<br>그다음 선택 박스에서 사용자를 선택하면 위시 리스트 목록, 편집 화면이 보이도록 고쳐보겠습니다. `App.js` 파일을 수정합니다. 
+<br>그다음 첫 화면을 수정해봅시다. 선택 박스에서 사용자를 선택하면 위시 리스트 목록, 편집 화면이 보이도록 고쳐보겠습니다. 다시 `App.js` 파일을 편집합니다. 
 
-참고로 동영상 강의에서는 `group.users.values().map` 를 사용하고 있습니다. 하지만 Mobx 2에서 사용방법이 변경되었습니다. `Array.from(group.users.values()).map` 또는 `values(group.users).map` 를 사용하세요.
+참고로 동영상 강의에서는 `group.users.values().map` 를 사용하고 있습니다. 하지만 Mobx 2에서 사용방법이 변경되었습니다. `Array.from(group.users.values()).map` 또는 `values(group.users).map` 를 사용해야합니다.
 
 `src/components/App.js`
 
@@ -302,18 +288,16 @@ class App extends React.Component {
 export default App;
 ```
 
-**실행화면**
-![](https://files.steempeak.com/file/steempeak/anpigon/wRrhfC49-2019-08-25_21-15-02.2019-08-25_21_16_57.gif)
+### 실행화면
 
+![](https://steemitimages.com/0x0/https://files.steempeak.com/file/steempeak/anpigon/wRrhfC49-2019-08-25_21-15-02.2019-08-25_21_16_57.gif)
 
-<br>
-<br>
 
 ***
 
-> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 먼저 작성되었습니다.
+> 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 작성하였습니다.
 
- `댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
+`댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
 
 항상 행복한 하루 보내시길 바랍니다.
 
