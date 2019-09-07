@@ -66,11 +66,13 @@ recipient: types.reference(types.late(() => User))
 recipient: types.maybe(types.reference(types.late(() => User)))
 ```
 
-<br>그래서 최종 User 모델은 다음과 같이 작성합니다.
+<br>그래서 최종 User 모델을 다음과 같이 작성합니다.
 
 `src/models/Group.js`
 
 ```js
+import // (...)
+
 export const User = types
   .model({
     id: types.identifier, // add here
@@ -82,6 +84,10 @@ export const User = types
   .actions(self => ({
     getSuggestions: flow(function*() { // (...) })
   }));
+
+export const Group = types.model({
+  users: types.map(User)
+});
 ```
 
 > **[메모] types.optional과 types.maybe의 차이**<br>
