@@ -130,7 +130,7 @@ it("can calculate the total price of a wishlist", () => {
 
 > 이 글은 [보상형 SNS 스팀잇](https://steemit.com/@anpigon)에서 작성하였습니다.
 
- `댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
+`댓글`, `팔로우`, `좋아요` 해 주시는 모든 분께 감사합니다.
 
 항상 행복한 하루 보내시길 바랍니다.
 
