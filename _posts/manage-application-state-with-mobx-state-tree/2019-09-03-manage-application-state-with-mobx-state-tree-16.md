@@ -13,7 +13,7 @@ tags:
 
 <br>
 
-이전글 ["\[React\] Mobx-state-tree #15 : Use Volatile State and Lifecycle Methods to Manage Private State"](/react/2019/09/01/manage-application-state-with-mobx-state-tree-15/)에서 이어지는 내용입니다.
+> 이 포스팅은 제가 학습한 내용을 기록한 글입니다. 이전글 ["\[React\] Mobx-state-tree #15 : Use Volatile State and Lifecycle Methods to Manage Private State"](/react/2019/09/01/manage-application-state-with-mobx-state-tree-15/)에서 이어지는 내용입니다.
 
 <br>
 
